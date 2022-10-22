@@ -7,8 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    @Getter
-    @Setter
+    @Getter @Setter
     private List<FlowerPack> bucket = new ArrayList();
     private int amount = 0;
     private List<String> colours = new ArrayList();
@@ -31,9 +30,9 @@ public class FlowerBucket {
 //    }
 
     public void add(FlowerPack pack) {
-        bucket.add(pack);
-        amount += 1;
-        colours.add(pack.getColor());
+        this.bucket.add(pack);
+        this.amount += 1;
+        this.colours.add(pack.getColor());
     }
 
     public double getPrice() {
