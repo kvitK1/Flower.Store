@@ -1,6 +1,9 @@
 package flower.store;
 
-import flowerstore.*;
+import flowerstore.FlowerStore;
+import flowerstore.Flower;
+import flowerstore.FlowerType;
+import flowerstore.FlowerColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
@@ -23,8 +26,6 @@ public class FlowerStoreTest {
         flower.setFlowerType(FlowerType.TULIP);
         flower.setSepalLength(SEPALLENGTH);
         flower.setColor(FlowerColor.BLUE);
-//        FlowerPack flowerPack = new FlowerPack(flower, QUANTITY);
-//        FlowerBucket flowerBucket =  new FlowerBucket();
         flowerStore.addFlower(flower);
         Assertions.assertTrue(flowerStore.search(flower));
     }
