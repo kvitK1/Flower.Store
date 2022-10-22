@@ -1,6 +1,5 @@
 package flowerstore;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,8 +19,10 @@ public class Flower {
 
     @Override
     public String toString() {
-        String result = "<" + Flower.class.getSimpleName() + ": (sepalLength: " + this.getSepalLength() +
-                ", color: " + this.getColor() + ", price: " + this.getPrice() + ") >";
+        String result = "<" + Flower.class.getSimpleName() + ": (sepalLength: "
+                + this.getSepalLength() + ", color: " + this.getColor()
+                + ", price: "
+                + this.getPrice() + ") >";
         return result;
     }
 }

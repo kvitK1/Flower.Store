@@ -21,7 +21,8 @@ public class FlowerBucket {
 //        for (FlowerPack pack : bucket) {
 //            typeChecker = wantedFlower.getType().equals(pack.getType());
 //            colorChecker = wantedFlower.getColor().equals(pack.getColor());
-//            priceChecker = wantedFlower.getPrice() * pack.getAmount() == pack.getPrice();
+//            priceChecker = wantedFlower.getPrice() *
+//            pack.getAmount() == pack.getPrice();
 //            if (typeChecker && colorChecker && priceChecker) {
 //                packs.add(pack);
 //            }

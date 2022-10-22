@@ -1,19 +1,22 @@
 package flowerstore;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerStore {
-
-    List<Flower> flowerCatalog = new ArrayList();
+    @Setter@Getter
+    private List<Flower> flowerCatalog = new ArrayList();
 
 //    public boolean search(Flower wantedFlower) {
 //        List<FlowerBucket> appealingBuckets = new ArrayList();
 //        for (FlowerBucket bucket: flowerCatalog) {
 //            List<FlowerPack> res = bucket.desirableInSearch(wantedFlower);
-//            if (res.size()!=0) { appealingBuckets.add(bucket); }
+//            if (res.size() != 0) { appealingBuckets.add(bucket); }
 //        }
-//        return (appealingBuckets.size()>0);
+//        return (appealingBuckets.size() > 0);
 //    }
 
     public void addFlower(Flower flower) {
@@ -33,7 +36,7 @@ public class FlowerStore {
                 packs.add(flower);
             }
         }
-        return (packs.size()>0);
+        return (packs.size() > 0);
     }
 
 }
